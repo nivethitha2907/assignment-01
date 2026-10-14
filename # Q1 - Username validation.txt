@@ -1,0 +1,14 @@
+# Q1 - Username validation 
+
+
+
+username = input (" Enter your username :"). strip()
+ 
+if username =="":
+    print ("Invalid username: Username cannot be empty."
+elseif Len(username) < 5:
+    print (" Invalid username: Username must contain at least 5 character.")
+elseif username .lower() == " admin": 
+    print (" Invalid username: Username cannot be admin.")
+else: 
+    print("Valid username.")

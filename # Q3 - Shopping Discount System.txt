@@ -1,0 +1,31 @@
+# Q3 - Shopping Discount System
+
+
+
+order _ amount = float(input("Enter the order amount: "))
+membership = input("Are you a member? (yes/no): ").strip().lower()
+
+if order _ amount < 0 or order _ amount > 100000:
+    print("Invalid order amount.")
+elseif membership == "yes":
+    if order _ amount >= 5000:
+        discount = order _ amount * 0.15
+        print("Discount:", discount)
+        print("Final amount:", order _ amount - discount)
+    elseif order _ amount >= 2000:
+        discount = order _ amount * 0.10
+        print("Discount:", discount)
+        print("Final amount:", order _ amount - discount)
+    else:
+        print("No discount.")
+        print("Final amount:", order _ amount)
+elseif membership == "no":
+    if order _ amount >= 5000:
+        discount = order _ amount * 0.15
+        print("Discount:", discount)
+        print("Final amount:", order _ amount - discount)
+    else:
+        print("No discount.")
+        print("Final amount:", order _ amount)
+else:
+    print("Invalid membership response. Enter yes or no.")
